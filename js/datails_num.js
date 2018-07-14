@@ -1,14 +1,15 @@
-
 	$(function(){
 		$(".datails_content").each(function(){
+
 			$(this).find("div").each(function(){
 				$(this).find(".datails_num").each(function(){
 					var index = 0;
 					
 					//加
 					$(this).find("input:nth-of-type(3)").each(function(){
-						
+						console.log(this)
 						$(this).click(function(){
+							
 							index =$(this). parent().find($("input[type='number']")).val();
 							index++;
 							$(this).parent().find("input[type='number']").each(function(){
@@ -30,6 +31,7 @@
 							}
 							$(this).parent().find("input[type='number']").each(function(){
 								$(this).val(index);
+								
 							})
 							
 						})
@@ -43,4 +45,8 @@
 				
 			})
 		})
-	})
+	
+
+	
+   })
+	

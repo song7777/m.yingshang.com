@@ -12,14 +12,17 @@
     width: 2.4rem;
 	
 }
-.category_listbox dl{
+.category_listbox ul{
 	width: 100%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 
 }
-.category_listbox dt,dd{
+.category_listbox a{
+	color: #000000;
+}
+.category_listbox li{
 	border-bottom:1px solid #FFFFFF ;
 	width: 100%;
 	height: 0.986666rem;
@@ -30,11 +33,7 @@
 	font-size: 0.346666rem;
 
 }
-.category_listbox dt:hover{
-	background: #FFFFFF;
-	border-bottom:1px solid #629e2c ;
-}
-.category_listbox dd:hover{
+.category_listbox li.active{
 	background: #FFFFFF;
 	border-bottom:1px solid #629e2c ;
 }
@@ -58,6 +57,20 @@
 	
 	width: 2.4rem;
 	height: 2.4rem;
+}
+.datails_content>div{
+	margin-left: 0.266666rem;
+	width: 40%;
+	height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;;
+}
+.datails_content>div p{
+	display: -webkit-box; 
+-webkit-line-clamp: 2; 
+-webkit-box-orient: vertical; 
+overflow: hidden;
 }
 .datails_num {
 	width: 2.266666rem;

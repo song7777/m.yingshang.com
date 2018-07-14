@@ -44,13 +44,13 @@
 	display: inline-block;
 	font: 0.373333rem/0.533333rem "微软雅黑";
 }
-#starRating .photo{
+#starRating div{
 	display: inline-block;
 	line-height: 0.853333rem;
 	text-align: center;
 	margin-left: 0.666666rem;
 }
-#starRating .photo span {
+#starRating div span {
     position: relative;
     display: inline-block;
     width: 0.533333rem;
@@ -58,10 +58,10 @@
     overflow: hidden;
     cursor: pointer;
 }
-#starRating .photo span:last-child {
+#starRating div span:last-child {
     margin-right: 0px;
 }
-#starRating .photo span .nohigh {
+#starRating div span .nohigh {
     position: absolute;
     width: 0.533333rem;
     height:0.533333rem;
@@ -70,7 +70,7 @@
     background: url("../img/star.png");
     background-size: cover;
 }
-#starRating .photo span .high {
+#starRating div span .high {
     position: absolute;
     width: 0.533333rem;
     height: 0.533333rem;

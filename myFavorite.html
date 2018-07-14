@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>搜索</title>
+    <title>我的收藏</title>
 	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<link rel="stylesheet" type="text/css" href="css/myFavorite.css"/>
 </head>
 <body>
-	<div class="public_content">
+	<div class="public_content" id="myFavorite">
 		<header class="public_header">
 			
 			<div class="public_header_content">
@@ -23,14 +23,14 @@
 			</div>
 		</header>
 
-		<section class="favorite_result" >
+		<section class="favorite_result"  v-for="(favorite,index) in items">
 			<div class="result_content">
 				<div class="result_list">
 					<div class="list_content">
-						<img src="img/detail3.jpg" alt="" />
+						<img :src="'http://xiaoer.yuncentry.com'+item[index].cover_img" />
 						<div >
-							<p class="title">好看又好吃</p>
-							<p class="info">确定不来一份吗</p>
+							<p class="title">{{item[index].goods_name}}</p>
+							<p class="info">{{item[index].intro}}</p>
 							<div class="datails_num">
 										<input type="button" name="subtract" value="-">
 										<input type="number" value="1"/>
@@ -41,132 +41,15 @@
 						</div>
 					</div>	
 					<div class="result_last">
-						<span class="price">￥69元</span>
-						<i class="iconfont icon-weibiao45124"></i>
+						<span class="price">￥{{item[index].shop_price}}元</span>
+						<i class="iconfont icon-weibiao45124 CartDel"></i>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="favorite_result" >
-			<div class="result_content">
-				<div class="result_list">
-					<div class="list_content">
-						<img src="img/detail3.jpg" alt="" />
-						<div >
-							<p class="title">好看又好吃</p>
-							<p class="info">确定不来一份吗</p>
-							<div class="datails_num">
-										<input type="button" name="subtract" value="-">
-										<input type="number" value="1"/>
-										
-										<input type="button" name="add" value="+" >
-										
-							</div>
-						</div>
-					</div>	
-					<div class="result_last">
-						<span class="price">￥69元</span>
-						<i class="iconfont icon-weibiao45124"></i>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="favorite_result" >
-			<div class="result_content">
-				<div class="result_list">
-					<div class="list_content">
-						<img src="img/detail3.jpg" alt="" />
-						<div >
-							<p class="title">好看又好吃</p>
-							<p class="info">确定不来一份吗</p>
-							<div class="datails_num">
-										<input type="button" name="subtract" value="-">
-										<input type="number" value="1"/>
-										
-										<input type="button" name="add" value="+" >
-										
-							</div>
-						</div>
-					</div>	
-					<div class="result_last">
-						<span class="price">￥69元</span>
-						<i class="iconfont icon-weibiao45124"></i>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="favorite_result" >
-			<div class="result_content">
-				<div class="result_list">
-					<div class="list_content">
-						<img src="img/detail3.jpg" alt="" />
-						<div >
-							<p class="title">好看又好吃</p>
-							<p class="info">确定不来一份吗</p>
-							<div class="datails_num">
-										<input type="button" name="subtract" value="-">
-										<input type="number" value="1"/>
-										
-										<input type="button" name="add" value="+" >
-										
-							</div>
-						</div>
-					</div>	
-					<div class="result_last">
-						<span class="price">￥69元</span>
-						<i class="iconfont icon-weibiao45124"></i>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="favorite_result" >
-			<div class="result_content">
-				<div class="result_list">
-					<div class="list_content">
-						<img src="img/detail3.jpg" alt="" />
-						<div >
-							<p class="title">好看又好吃</p>
-							<p class="info">确定不来一份吗</p>
-							<div class="datails_num">
-										<input type="button" name="subtract" value="-">
-										<input type="number" value="1"/>
-										
-										<input type="button" name="add" value="+" >
-										
-							</div>
-						</div>
-					</div>	
-					<div class="result_last">
-						<span class="price">￥69元</span>
-						<i class="iconfont icon-weibiao45124"></i>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="favorite_result" >
-			<div class="result_content">
-				<div class="result_list">
-					<div class="list_content">
-						<img src="img/detail3.jpg" alt="" />
-						<div >
-							<p class="title">好看又好吃</p>
-							<p class="info">确定不来一份吗</p>
-							<div class="datails_num">
-										<input type="button" name="subtract" value="-">
-										<input type="number" value="1"/>
-										
-										<input type="button" name="add" value="+" >
-										
-							</div>
-						</div>
-					</div>	
-					<div class="result_last">
-						<span class="price">￥69元</span>
-						<i class="iconfont icon-weibiao45124"></i>
-					</div>
-				</div>
-			</div>
-		</section>
+		
+		
+		
 		
 		
 	</div>
@@ -174,5 +57,8 @@
 <script src="js/FontSize.js"></script>
 <script src="js/iconfont.js"></script>
 <script src="js/jquery-3.3.1.js"></script>
+<script src="js/vue.min.js"></script>
+<script src="js/token.js"></script>
+<script src="js/myFavorite.js"></script>
 
-</html>x
+</html>

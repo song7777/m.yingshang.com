@@ -26,22 +26,22 @@
 						<p class="comment_score_title">综合评分</p>
 						<div id="starRating">
 							<span>商品评价:</span>
-						    <p class="photo">
+						    <div class="photo">
 						        <span><i class="high"></i><i class="nohigh"></i></span>
 						        <span><i class="high"></i><i class="nohigh"></i></span>
 						        <span><i class="high"></i><i class="nohigh"></i></span>
 						        <span><i class="high"></i><i class="nohigh"></i></span>
 						        <span><i class="high"></i><i class="nohigh"></i></span>
-						    </p>
+						    </div>
 						    <p></p>
 						    <span>物流评价:</span>
-						    <p class="photo">
+						    <div class="photo2">
 						        <span><i class="high"></i><i class="nohigh"></i></span>
 						        <span><i class="high"></i><i class="nohigh"></i></span>
 						        <span><i class="high"></i><i class="nohigh"></i></span>
 						        <span><i class="high"></i><i class="nohigh"></i></span>
 						        <span><i class="high"></i><i class="nohigh"></i></span>
-						    </p>
+						    </div>
 						    
 						    <div class="bottoms">
        						<a class="blueBtn sureStar">确认</a>
@@ -66,13 +66,16 @@
 	 $(function () {
         //评分
         var starRating = 0;
+        var starRating2 = 0;
+        
         $('.photo span').on('mouseenter',function () {
             var index = $(this).index()+1;
             $(this).prevAll().find('.high').css('z-index',1)
-            $(this).find('.high').css('z-index',1)
+//          $(this).find('.high').css('z-index',1)
             $(this).nextAll().find('.high').css('z-index',0)
             $('.starNum').html((index*2).toFixed(1)+'分')
         })
+        
         $('.photo').on('mouseleave',function () {
             $(this).find('.high').css('z-index',0)
             var count = starRating / 2
@@ -91,6 +94,38 @@
             $('.starNum').html(starRating.toFixed(1)+'分');
 //          alert('评分：'+(starRating.toFixed(1)+'分'))
         })
+        
+        
+        
+          $('.photo2 span').on('mouseenter',function () {
+            var index = $(this).index()+1;
+            $(this).prevAll().find('.high').css('z-index',1)
+//          $(this).find('.high').css('z-index',1)
+            $(this).nextAll().find('.high').css('z-index',0)
+            $('.starNum').html((index*2).toFixed(1)+'分')
+        })
+        
+        $('.photo2').on('mouseleave',function () {
+            $(this).find('.high').css('z-index',0)
+            var count = starRating2 / 2
+            if(count == 5) {
+                $('.photo2 span').find('.high').css('z-index',1);
+            } else {
+                $('.photo2 span').eq(count).prevAll().find('.high').css('z-index',1);
+            }
+            $('.starNum').html(starRating2.toFixed(1)+'分')
+        })
+        $('.photo2 span').on('click',function () {
+            var index = $(this).index()+1;
+            $(this).prevAll().find('.high').css('z-index',1)
+            $(this).find('.high').css('z-index',1)
+            starRating2 = index*2;
+            $('.starNum').html(starRating2.toFixed(1)+'分');
+//          alert('评分：'+(starRating.toFixed(1)+'分'))
+        })
+        
+        
+        
         //取消评分
         $('.cancleStar').on('click',function () {
             starRating = 0;
@@ -102,7 +137,8 @@
             if(starRating===0) {
                 alert('最低一颗星！');
             } else {
-//             alert('评分：'+(starRating.toFixed(1)+'分'))
+               alert('商品评分：'+(starRating.toFixed(1)+'分,')+'物流评分：'+(starRating2.toFixed(1)+'分'))
+               
             }
         })
     })

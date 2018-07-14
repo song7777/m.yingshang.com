@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/shopCart2.css"/>
 </head>
 <body>
-	<div class="public_content2">
+	<div class="public_content2" id="shopCart2">
 		<header class="public_header">
 			
 			<div class="public_header_content">
@@ -37,106 +37,35 @@
 		<section class="category">
 			<div class="category_content">
 				
-				<div class="category_details">
+				<div class="category_details" v-for="(details,index) in items">
 					<div class="datails_content" >
 							<input type="radio" name="" id="" value="" />
-							<img src="img/detail3.jpg" alt="" />
-							<div>
-								<p>速度采购，量多优惠</p>
-								<span>￥69元</span>
-								<div>
+							<img :src="'http://xiaoer.yuncentry.com'+item[index].cover_img" alt="" />
+							<div >
+								<p v-text="item[index].goods_name"></p>
+								<span>￥<span v-text="item[index].shop_price"></span>元</span>
+								<div >
 									<span>数量</span>
 								
 									<div class="datails_num">
 	
 										<input type="button" name="subtract" value="-">
-										<input type="number" value="1"/>
+										<input type="number"  v-model="item[index].buy_num"/>
 										
 										<input type="button" name="add" value="+" >
 										
 									</div>
 								</div>
 							</div>
-							<i class="iconfont icon-delete"></i>
+							<i class="iconfont icon-delete CartDel" ></i>
 							
 						
 						
 					</div>
-					<div class="datails_content" >
-							<input type="radio" name="" id="" value="" />
-							<img src="img/detail3.jpg" alt="" />
-							<div>
-								<p>速度采购，量多优惠</p>
-								<span>￥69元</span>
-								<div>
-									<span>数量</span>
-								
-									<div class="datails_num">
-	
-										<input type="button" name="subtract" value="-">
-										<input type="number" value="1"/>
-										
-										<input type="button" name="add" value="+" >
-										
-									</div>
-								</div>
-							</div>
-							<i class="iconfont icon-delete"></i>
-							
-						
-						
-					</div>
-					<div class="datails_content" >
-							<input type="radio" name="" id="" value="" />
-							<img src="img/detail3.jpg" alt="" />
-							<div>
-								<p>速度采购，量多优惠</p>
-								<span>￥69元</span>
-								<div>
-									<span>数量</span>
-								
-									<div class="datails_num">
-	
-										<input type="button" name="subtract" value="-">
-										<input type="number" value="1"/>
-										
-										<input type="button" name="add" value="+" >
-										
-									</div>
-								</div>
-							</div>
-							<i class="iconfont icon-delete"></i>
-							
-						
-						
-					</div>
-					<div class="datails_content" >
-							<input type="radio" name="" id="" value="" />
-							<img src="img/detail3.jpg" alt="" />
-							<div>
-								<p>速度采购，量多优惠</p>
-								<span>￥69元</span>
-								<div>
-									<span>数量</span>
-								
-									<div class="datails_num">
-	
-										<input type="button" name="subtract" value="-">
-										<input type="number" value="1"/>
-										
-										<input type="button" name="add" value="+" >
-										
-									</div>
-								</div>
-							</div>
-							<i class="iconfont icon-delete"></i>
-							
-						
-						
-					</div>
-										
 					
 				</div>
+				
+				
 			</div>
 		</section>
 		
@@ -161,5 +90,8 @@
 <script src="js/FontSize.js"></script>
 <script src="js/iconfont.js"></script>
 <script src="js/jquery-3.3.1.js"></script>
-<script src="js/datails_num.js"></script>
+<!--<script src="js/datails_num.js"></script>-->
+<script src="js/vue.min.js"></script>
+<script src="js/token.js"></script>
+<script src="js/shopCart2.js"></script>
 </html>

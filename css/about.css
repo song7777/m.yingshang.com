@@ -3,21 +3,23 @@
  }
  .about_content{
  	width: 100%;
- 	padding: 0.32rem 0.48rem;
+ 	padding: 0 0.48rem;
  	box-sizing: border-box;
  }
-  .about_list{
-  	width: 100%;
-  	margin-bottom: 0.133333rem;
-  }
+
  
- 
- .about_title{
-	font: 0.373333rem/0.506666rem "微软雅黑";
-}
  .about_info{
- 	font: 0.32rem/0.64rem "微软雅黑";
- 	text-indent:2em;
- 	padding-left:0.4rem ;
+ 	font: 0.5rem/0.6rem "微软雅黑";
  	box-sizing: border-box;
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+ 	justify-content: center;
  }
+  .about_info img{
+  	width:8rem;
+  	height: 5.333333rem;
+  	text-align: center;
+  	padding: 0.266666rem;
+  	box-sizing: border-box;
+  }

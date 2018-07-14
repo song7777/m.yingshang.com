@@ -7,7 +7,11 @@
 		height: 5.333333rem;
 	
 	}
-	.slide1{
+	.swiper-slide img{
+	width: 100%;
+	height: 100%;
+}
+	/*.slide1{
 		background: url(../img/4.jpg) no-repeat;
 		background-size:cover ;
 	}
@@ -19,7 +23,7 @@
 	.slide3{
 		background: url(../img/6.jpg) no-repeat;
 		background-size:cover ;
-	}
+	}*/
 	.info{
 		width: 100%;
 	
@@ -154,7 +158,7 @@
 	font:0.32rem/0.506666rem "微软雅黑";
 	font-weight: bold;
 }
-.public_footer_content .add_cart{
+.public_footer_content .addCart{
 	background: #f07d10;
 	width:35%;
 	color: #FFFFFF;

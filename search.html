@@ -7,42 +7,32 @@
 	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<link rel="stylesheet" type="text/css" href="css/search.css"/>
+	<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
 </head>
 <body>
-	<div class="public_content">
+	<div class="public_content" id="search">
 		<header class="public_header">
 			<div class="public_header_content">
 				<a href="store.html"><i class="iconfont icon-xiazai6"></i></a>
 				<div class="search">
-					<input type="text" placeholder="点击搜索啊" />
-					<button>搜索</button>
+					<input type="text" placeholder="点击搜索啊" v-model="goods_name" />
+					<button @click="search_click">搜索</button>
 				</div>
 			</div>
 		</header>
-		<section class="search_result" onClick="window.location.href='goodsDetails.html'">
+		<section class="search_result" v-for="(lisss,index) in lists" @click="search_click2(index)" >
 			<div class="result_content">
 				<div class="result_list">
-					<img src="img/detail3.jpg" alt="" />
+					<img :src="'http://xiaoer.yuncentry.com' + list[index].cover_img" />
 					<div>
-						<p class="title">好看又好吃</p>
-						<p class="info">确定不来一份吗</p>
-						<span class="price">￥69元</span>
+						<p class="title" v-text="list[index].goods_name"></p>
+						<p class="info" v-text="list[index].intro"></p>
+						<span class="price" >￥<span v-text="list[index].shop_price"></span>元</span>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="search_result" onClick="window.location.href='goodsDetails.html'">
-			<div class="result_content">
-				<div class="result_list">
-					<img src="img/detail3.jpg" alt="" />
-					<div>
-						<p class="title">好看又好吃</p>
-						<p class="info">确定不来一份吗</p>
-						<span class="price">￥69元</span>
-					</div>
-				</div>
-			</div>
-		</section>
+		
 		
 		
 	</div>
@@ -50,5 +40,7 @@
 <script src="js/FontSize.js"></script>
 <script src="js/iconfont.js"></script>
 <script src="js/jquery-3.3.1.js"></script>
-
+<script src="js/vue.min.js"></script>
+<script src="js/search.js"></script>
+<script src="js/mui.min.js"></script>
 </html>

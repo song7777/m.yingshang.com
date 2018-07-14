@@ -23,7 +23,7 @@
 						</div>
 						
 						<div class="personal_name">
-							<p>{{content}}</p>
+							<p v-text="Array.nickname"></p>
 							<a href="attendance.html">签到有礼</a>
 						</div>
 					</div>
@@ -33,19 +33,19 @@
 				</div>
 				<div class="info">
 					<a href="#">
-						<span>{{member}}</span>
+						<span v-text="member"></span>
 						<span>会员等级</span>
 					</a>
 					<a href="#">
-						<span>{{amountspent}}</span>
+						<span v-text="Array.amountspent"></span>
 						<span>消费总额</span>
 					</a>
 					<a href="#">
-						<span>{{balance}}</span>
+						<span v-text="Array.balance"></span>
 						<span>账户余额</span>
 					</a>
 					<a href="#">
-						<span>{{points}}</span>
+						<span v-text="Array.points"></span>
 						<span>积分数</span>
 					</a>
 				</div>				
@@ -142,8 +142,8 @@
 					</div>
 					<i class="iconfont icon-next"></i>
 				</a>
-				<a href="index.html">
-					<div>
+				<a href="index.html" >
+					<div >
 						<i class="iconfont icon-icon"></i>
 						<span>退出登录</span>
 					</div>
@@ -170,7 +170,7 @@
 					<i class="iconfont icon-leimupinleifenleileibie"></i>
 					<span>分类</span>
 				</a>
-				<a href="#">
+				<a href="shopCart2.html">
 					<i class="iconfont icon-shoppingcart"></i>
 					<span>购物车</span>
 				</a>
@@ -186,5 +186,6 @@
 <script src="js/iconfont.js"></script>
 <script src="js/jquery-3.3.1.js"></script>
 <script src="js/vue.min.js"></script>
+<script src="js/token.js"></script>
 <script src="js/personalcenter.js"></script>
 </html>

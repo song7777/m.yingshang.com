@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/goodsCategory.css"/>
 </head>
 <body>
-	<div class="public_content">
+	<div class="public_content" id="Catedory">
 		<header class="public_header">
 			<div class="public_header_content">
 				<a href="store.html"><i class="iconfont icon-xiazai6"></i></a>
@@ -17,139 +17,35 @@
 			</div>
 		</header>
 		<section class="category">
-			<div class="category_content">
+			<div class="category_content ">
 				<div class="category_listbox">
-					<dl>
-						<dt>全部分类</dt>
-						<dd>土特产</dd>
-						<dd>日常用品</dd>
-						<dd>大米专区</dd>
-						<dd>饮用水</dd>
-						<dd>精选推荐</dd>
-						<dd>热卖产品</dd>
-					</dl>
+					<ul>
+						<a href="#">
+							<li v-for="(Catedory,index) in lists" :key="index" :class="{active: index === Index}" @click="list_click(index)" v-text="list[index].catename"></li>
+						</a>
+					</ul>
+					
 				</div>
-				<div class="category_details">
-					<div class="datails_content" >
-						
-							<img src="img/detail1.jpg" alt="" />
-							<div>
-								<p>速度采购，量多优惠</p>
-								<span>￥69元</span>
-								<div class="datails_num">
-									<input type="button" name="subtract" value="-">
-									<input type="number" value="1"/>
-									
-									<input type="button" name="add" value="+" >
-									
-								</div>
-							</div>
-							<i class="iconfont icon-weibiao45124"></i>
-							
-						
-						
-					</div>
-					<div class="datails_content">
-						
-							<img src="img/detail1.jpg" alt="" />
-							<div>
-								<p>速度采购，量多优惠</p>
-								<span>￥69元</span>
-								<div class="datails_num">
-									<input type="button" name="subtract" value="-">
-									<input type="number" value="1"/>
-									
-									<input type="button" name="add" value="+" >
-									
-								</div>
-							</div>
-							<i class="iconfont icon-weibiao45124"></i>
-							
-						
-						
-					</div>
-					<div class="datails_content">
-						
-							<img src="img/detail1.jpg" alt="" />
-							<div>
-								<p>速度采购，量多优惠</p>
-								<span>￥69元</span>
-								<div class="datails_num">
-									<input type="button" name="subtract" value="-">
-									<input type="number" value="1"/>
-									
-									<input type="button" name="add" value="+" >
-									
-								</div>
-							</div>
-							<i class="iconfont icon-weibiao45124"></i>
-							
-						
-						
-					</div>
-					<div class="datails_content">
-						
-							<img src="img/detail1.jpg" alt="" />
-							<div>
-								<p>速度采购，量多优惠</p>
-								<span>￥69元</span>
-								<div class="datails_num">
-									<input type="button" name="subtract" value="-">
-									<input type="number" value="1"/>
-									
-									<input type="button" name="add" value="+" >
-									
-								</div>
-							</div>
-							<i class="iconfont icon-weibiao45124"></i>
-							
-						
-						
-					</div>
-					<div class="datails_content">
-						
-							<img src="img/detail1.jpg" alt="" />
-							<div>
-								<p>速度采购，量多优惠</p>
-								<span>￥69元</span>
-								<div class="datails_num">
-									<input type="button" name="subtract" value="-">
-									<input type="number" value="1"/>
-									
-									<input type="button" name="add" value="+" >
-									
-								</div>
-							</div>
-							<i class="iconfont icon-weibiao45124"></i>
-							
-						
-						
-					</div>
-					<div class="datails_content">
-						
-							<img src="img/detail1.jpg" alt="" />
-							<div>
-								<p>速度采购，量多优惠</p>
-								<span>￥69元</span>
-								<div class="datails_num">
-									<input type="button" name="subtract" value="-">
-									<input type="number" value="1"/>
-									
-									<input type="button" name="add" value="+" >
-									
-								</div>
-							</div>
-							<i class="iconfont icon-weibiao45124"></i>
-							
-						
-						
-					</div>
-				
+				<div class="category_details " >
 					
-					
-					
-					
-					
+					<div class="datails_content"  v-for="(details,index) in goods" :key="index"   >
+							<img :src="'http://xiaoer.yuncentry.com' + good[index].cover_img" />
+							<div>
+								<p v-text="good[index].goods_name"></p>
+								<span>￥<span v-text="good[index].shop_price"></span>元</span>
+								<div class="datails_num">
+									<input type="button" name="subtract" value="-">
+									<input type="number" value="1"/>
+									
+									<input type="button" name="add" value="+" >
+									
+								</div>
+							</div>
+							<i class="iconfont icon-weibiao45124 shoppingcart" ></i>
+							
+						
+						
+					</div>
 				</div>
 			</div>
 		</section>
@@ -160,5 +56,9 @@
 <script src="js/FontSize.js"></script>
 <script src="js/iconfont.js"></script>
 <script src="js/jquery-3.3.1.js"></script>
-<script src="js/datails_num.js"></script>
+<!--<script src="js/datails_num.js"></script>-->
+<script src="js/vue.min.js"></script>
+<script src="js/token.js"></script>
+<script src="js/goodsCategory.js"></script>
+
 </html>
