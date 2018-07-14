@@ -1,0 +1,23 @@
+ .about{
+ 	width: 100%;
+ }
+ .about_content{
+ 	width: 100%;
+ 	padding: 0.32rem 0.48rem;
+ 	box-sizing: border-box;
+ }
+  .about_list{
+  	width: 100%;
+  	margin-bottom: 0.133333rem;
+  }
+ 
+ 
+ .about_title{
+	font: 0.373333rem/0.506666rem "微软雅黑";
+}
+ .about_info{
+ 	font: 0.32rem/0.64rem "微软雅黑";
+ 	text-indent:2em;
+ 	padding-left:0.4rem ;
+ 	box-sizing: border-box;
+ }

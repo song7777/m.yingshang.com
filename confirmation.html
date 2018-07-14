@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>订单确认</title>
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/goodsCategory.css"/>
+	<link rel="stylesheet" type="text/css" href="css/shopCart2.css"/>
+	<link rel="stylesheet" type="text/css" href="css/confirmation.css"/>
+</head>
+<body>
+	<div class="public_content2">
+		<header class="public_header">
+			
+			<div class="public_header_content">
+				<div class="top_btn">
+					<a href="shopCart2.html"><i class="iconfont icon-xiazai6"></i></a>
+				</div>	
+				<a href="#">订单确认</a>
+
+				
+			</div>
+		</header>
+		
+		<section class="category">
+			<div class="category_content">
+				
+				<div class="category_details">
+					<div class="datails_content" >
+							<input type="radio" name="" id="" value="" />
+							<img src="img/detail3.jpg" alt="" />
+							<div>
+								<p>速度采购，量多优惠</p>
+								<span>x1</span>
+							</div>
+							<div>
+								<span>￥25元</span>							
+								<i class="iconfont icon-delete"></i>
+							</div>
+						
+						
+					</div>
+					<div class="datails_content" >
+							<input type="radio" name="" id="" value="" />
+							<img src="img/detail3.jpg" alt="" />
+							<div>
+								<p>速度采购，量多优惠</p>
+								<span>x1</span>
+							</div>
+							<div>
+								<span>￥25元</span>	
+								<i class="iconfont icon-delete"></i>
+							</div>
+						
+						
+					</div>
+		</section>			
+					<section class="Coupons">
+						<div class="Coupons_content">
+							<span>优惠券</span>
+							<div>
+								<span>10元优惠券</span>
+								<i class="iconfont icon-next"></i>
+							</div>
+						</div>
+						
+						
+					</section>
+					<section class="delivery">
+						<div class="delivery_content">
+							<div class="delivery_time">
+								<span>配送时间:</span>
+								<input type="date" />
+							</div>
+							<div class="delivery_way">
+								<span>取货方式:</span>
+								<input type="radio" name="" id="" value="" />
+								送货上门
+							</div>
+							<div class="delivery_Community">
+								<span>小区/其他:</span>
+								<span>惠民小区</span>
+							</div>
+							<div class="delivery_number">
+								<span>楼号-门牌号:</span>
+								<div>
+									<ul>
+										<li>湖南省长沙市天心区五一大道</li>
+										<li>五一新干线</li>
+										<li>联系电话：12345679</li>
+									</ul>
+								<a href="address.html">修改地址</a>	
+								</div>
+							</div>
+							<div class="delivery_money">
+								<span> 配送费:</span>
+								<span>免费</span>
+							</div>
+						</div>
+					</section>	
+			<section class="footer">
+				<div class="footer_content">
+					<div >
+						<span>商品总额:</span>
+						<span>$50.0元</span>
+					</div>
+					<div>
+						<span>优惠券:</span>
+						<span>￥10.0元</span>
+					</div>
+					<div>
+						<span>会员折扣:</span>
+						<span>5折</span>
+					</div>
+					<div>
+						<span>应付金额:</span>
+						<span>￥20.0元</span>
+					</div>
+					<button class="public_btn btn_con">确认提交</button>
+				</div>
+			</section>	
+			
+			
+		<section class="public_dialog" >
+			<div class="public_dialog_content">
+				<div class="pay_dialog">
+					<div class="balance">
+						<div>
+							<i class="iconfont icon-yue"></i>	
+							<div>
+								<span>余额支付</span>
+								<p>账户现有余额88元</p>
+							</div>
+							
+						</div>
+						<input type="radio" name="pay"/>
+						
+					</div>
+					<div class="WeChat">
+						<div>
+							<i class="iconfont icon-weixin"></i>	
+							<div>
+								<span>余额支付</span>
+								<p>推荐已开通微信钱包的用户使用</p>
+							</div>
+							
+						</div>
+						<input type="radio" name="pay" />
+						
+					</div>
+					<div class="alipay">
+						<div>
+							<i class="iconfont icon-z-alipay"></i>	
+							<div>
+								<span>余额支付</span>
+								<p>推荐拥有支付宝的用户使用</p>
+							</div>
+							
+						</div>
+						<input type="radio" name="pay"/>
+						
+					</div>
+				
+				<button class="public_btn btn_pay">确认支付</button>
+				
+
+					
+				</div>
+			</div>
+		</section>
+			
+	</div>
+</body>
+<script src="js/FontSize.js"></script>
+<script src="js/iconfont.js"></script>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/datails_num.js"></script>
+<script>
+	$(function(){
+		$(".btn_con").on("click",function(){
+				$(".public_dialog").css("display","block")
+		})
+		$(".btn_pay").on("click",function(){
+				$(".public_dialog").css("display","none")
+		})
+		
+	})
+</script>
+</html>

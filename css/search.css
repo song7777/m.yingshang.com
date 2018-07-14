@@ -1,0 +1,66 @@
+.search{
+	height: 1.173333rem;
+	display: flex;
+	align-items: center;
+	justify-content:  flex-end;
+	padding:0 0.853333rem;
+	box-sizing: border-box;
+	
+}
+.search input{
+	width: 6.32rem;
+	height: 0.666666rem;
+	background: #1E8A10;
+	border: 1px solid #83be7a;
+	border-radius: 0.066666rem;
+	font-size: 0.373333rem;
+	color: #FFFFFF;
+	padding: 0.133333rem 0 0.133333rem 0.266666rem;
+	box-sizing: border-box;
+}
+.search input::-webkit-input-placeholder{
+            color:#FFFFFF;
+        }
+.search button{
+	background: none;
+	border: none;
+	color: #FFFFFF;
+	font-size: 0.4rem;
+	margin-left: 0.32rem;
+} 
+.search_result {
+	width: 100%;
+	height: 2.72rem;
+	border-bottom:0.026666rem solid #f4f4f4;
+}
+.search_result .result_content {
+	width: 100%;
+	height: 2.72rem;
+	background: #FFFFFF;
+	padding:0.186666rem 0.186666rem 0.266666rem 0.186666rem;
+	box-sizing: border-box;
+	
+	
+}
+.result_list{
+	display: flex;
+	align-items: center;
+}
+.result_list div{
+	 align-self:flex-start;
+	margin-left: 0.373333rem;
+}
+.result_list div .title{
+	font: 0.4rem/0.666666rem "微软雅黑";
+}
+.result_list div .info{
+	font: 0.32rem/0.4rem "微软雅黑";
+} 
+.result_list div .price{
+	font: 0.4rem/0.666666rem "微软雅黑";
+	color: #1E8A10;
+}
+.result_content img{
+	width:2.986666rem;
+	height: 2.266666rem;
+}

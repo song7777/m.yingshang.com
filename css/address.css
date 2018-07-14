@@ -1,0 +1,105 @@
+.address{
+	width: 100%;
+	margin-top: 0.106666rem;
+	margin-bottom: 0.133333rem ;
+}
+.address_content{
+	width: 100%;
+	height: 3.946666rem;
+	background: #FFFFFF;
+	padding: 0.213333rem 0 0.266666rem 0.72rem;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items:flex-start;
+	font-size: 0.32rem;
+}
+.address_title{
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.address_title input{
+	margin-right: 0.133333rem;
+}
+.address_info{
+	width: 100%;
+	flex: 1;
+	margin-left: 0.533333rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	
+}
+.address_number{
+	display: flex;
+	
+}
+.address_info div:last-child{
+	
+
+}
+.address_info button{
+	border: 1px solid #8b8b8b;
+	color: #8b8b8b;
+	background: #FFFFFF;
+	width: 1.813333rem;
+	height: 0.533333rem;
+	
+}
+.address_info button:first-child{
+	border: 1px solid #f5b02f;
+	color: #f5b02f;
+}
+.newAddress{
+	width: 100%;
+}
+.newAddress_content{
+	width: 1000%;
+	height: 8.533333rem;
+	background: #FFFFFF;
+	padding: 0.24rem 0 0.24rem 0.32rem;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.newAddress_content>span{
+	height: 0.4rem;
+	color: #f5b02f;
+}
+.newAddress_content>div>span{
+	display: inline-block;
+	width: 1.866666rem;
+	text-align: end;
+	font-size: 0.293333rem;
+	margin-right: 0.133333rem;
+}
+
+
+.newAddress_content>div>input{
+	height: 0.746666rem;
+	width: 5.946666rem;
+	border: 0.053333rem solid #EEEEEE;
+	
+}
+.newAddress_content>div:last-of-type{
+	display: flex;
+}
+.newAddress_content>div>textarea{
+	width: 6rem;
+	height: 1.866666rem;
+	border: 0.053333rem solid #EEEEEE;
+	
+}
+.btn{
+	width: 100%;
+	height: 2.666666rem;
+	padding: 0.533333rem 1.013333rem;
+	
+	box-sizing: border-box;
+}
+.btn_address{
+border-radius: 0.133333rem;
+
+}

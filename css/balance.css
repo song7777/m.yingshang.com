@@ -1,0 +1,114 @@
+.sum{
+	width: 100%;
+}
+.sum_content{
+	width: 100%;
+	height: 1.333333rem;
+	background: #FFFFFF;
+	border-bottom: 0.053333rem solid #E2E2E2;
+	padding: 0 0.88rem 0 0.426666rem;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 0.346666rem;
+}
+.sum_content span{
+	color: #eda01c;
+}
+.sum_content button{
+	border: 0.053333rem solid #eda01c;
+	color: #eda01c;
+	background: none;
+	width: 1.386666rem;
+	height: 0.72rem;
+	border-radius: 0.133333rem;
+}
+.sum_content .recharge{
+	width: 2.133333rem;	
+}
+.count{
+	width: 100%;
+}
+.count_content{
+	width:100%;
+	padding: 0 0.266666rem;
+	box-sizing: border-box;
+	
+}
+.count_title{
+	
+	width: 100%;
+	height: 1.386666rem;
+	display: flex;
+	justify-content:  space-between;
+	align-items: center;
+	border-bottom: 0.053333rem solid #E2E2E2;
+	
+}
+.count_title button{
+	width: 50%;
+	height: 0.746666rem;
+	background: none;
+	border: 0.053333rem solid #99ca92;
+	font-size: 0.32rem;
+
+}
+
+.count_title button:first-child{
+	border-radius: 0.133333rem 0 0 0.133333rem;
+	border-right:0.053333rem solid #f0f0f0 ;
+	color: #1E8A10;
+	
+}
+.count_title button:last-child{
+	border-radius: 0 0.133333rem  0.133333rem 0;
+	background: #1E8A10;
+	border-left:0.053333rem solid #1E8A10 ;
+	color: #FFFFFF;
+	
+}
+.count_title2 button:first-child{
+	color: #FFFFFF;
+	background: #1E8A10;
+	border-right:0.053333rem solid #1E8A10 ;
+	
+	
+}
+.count_title2 button:last-child{
+	color: #1E8A10;
+	background: #f0f0f0;
+	border-left:0.053333rem solid #f0f0f0 ;
+	
+}
+
+
+
+.count_info{
+	width: 100%;
+	height: 1.28rem;
+	border-bottom: 0.053333rem solid #E2E2E2;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.count_info div{
+	display: flex;
+	flex-direction: column;
+	align-items:  flex-end;
+}
+.count_info>p {
+	font-size: 0.373333rem;
+}
+.count_info p span{
+	color: #f9b455;
+	font-size: 0.293333rem;
+}
+.count_info div p{
+	font-size: 0.32rem;
+	
+}
+.count_info div span{
+	font-size: 0.266666rem;
+	color: #989898;
+}

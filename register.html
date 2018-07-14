@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>用户注册</title>
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<style >
+		.btn_next{
+		margin-top: 2.133333rem;
+	}
+		
+	</style>
+</head>
+<body>
+	<div class="public_content" id="register">
+		<header class="public_header">
+			<div class="public_header_content">
+				<a href="login.html"><i class="iconfont icon-xiazai6"></i></a>
+				<a href="#">用户注册</a>
+			</div>
+		</header>
+		<section class="public_input register">
+				<div class="user">
+					<lable class="iconfont icon-user"></lable>
+					<input type="text" maxlength="11" placeholder="手机号/用户名"  v-model="mobile"/>
+				</div>
+				<div class="message">
+					<lable class="iconfont icon-yunongtongqingshuruyanzhengma"></lable>
+					<input type="number"  placeholder="短信验证码" v-model="code" />
+					<button class="public_smsBindPhone" @click="codes" >{{content}}</button>
+				</div>
+				<div class="password">
+					<lable class="iconfont icon-password" ></lable>
+					<input type="password" placeholder="密码"  v-model="password"/>
+				</div>
+				<div class="confirm_password">
+					<lable class="iconfont icon-password"></lable>
+					<input type="confirm_password" placeholder="确认密码" v-model="passwords"/>
+				</div>
+				<div class="coding">
+					<lable class="iconfont icon-wenbentext70" v-model="invitation"></lable>
+					<input type="text" placeholder="设备编码"/>
+				</div>
+					<button class="public_btn btn_next" @click="regi">下一步</button>
+
+		</section>		
+	</div>
+</body>
+<script src="js/FontSize.js"></script>
+<script src="js/iconfont.js"></script>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/vue.min.js"></script>
+<script src="js/register.js"></script>
+</html>

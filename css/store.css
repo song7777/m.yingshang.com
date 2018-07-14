@@ -1,0 +1,176 @@
+.public_content{
+	background: #f0f0f0;
+}
+.swiper-container{
+	width: 100%;
+}
+
+.swiper-slide{
+	width: 100%;
+	height: 3.653333rem;
+
+}
+.slide1{
+	background: url(../img/1.jpg) no-repeat;
+	background-size:cover ;
+}
+.slide2{
+	background: url(../img/2.jpg) no-repeat;
+	background-size:cover ;
+}
+
+.slide3{
+	background: url(../img/3.jpg) no-repeat;
+	background-size:cover ;
+}
+.goods{
+	width: 100%;
+	margin-top: 0.133333rem;
+}
+.goods_content{
+	width: 100%;
+	height: 4.373333rem;
+	box-sizing: border-box;
+}
+.goods_top{
+	height: 2.08rem;
+	margin-bottom: 0.133333rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: #FFFFFF;
+}
+.goods_top a{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 25%;
+}
+.goods_top i{
+	width: 1.066666rem;
+	height: 1.066666rem;
+	font-size: 0.666666rem;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #FFFFFF;
+}
+.goods_top a:nth-child(1) i{
+	background:#f642ca;
+}
+.goods_top a:nth-child(2) i{
+	background:#f87614;
+}
+.goods_top a:nth-child(3) i{
+	background:#ffbe10;
+}
+.goods_top a:nth-child(4) i{
+	background:#5c53c0;
+}
+.goods_top span{
+	font: 0.293333rem/0.533333rem "微软雅黑";
+	color: #000000;
+	
+}
+
+.goods_btm{
+	height: 2.08rem;
+	display: flex;
+	justify-content: space-between;
+}
+.goods_btm a{
+	width: 50%;
+	height: 100%;
+	background: #FFFFFF;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+
+}
+.goods_btm a:first-child{
+	margin-right: 0.133333rem;
+	
+}
+.goods_btm a div{
+	display: flex;
+	flex-direction: column;
+
+}
+.goods_btm span{
+	font-size: 0.4rem;
+	color: #000000;
+}
+.goods_btm p{
+	font-size: 0.266666rem;
+	color: #CCCCCC;
+}
+.goods_btm a:nth-child(1) i{
+	font-size: 1.133333rem;
+	color: #00f70b;
+}
+.goods_btm a:nth-child(2) i{
+	font-size: 1.133333rem;
+	color: #1c85be;
+}
+.products{
+	width: 100%;
+}
+.products_content{
+	width: 100%;
+	height: 8.8rem;
+}
+.products_title{
+	width: 100%;
+	height: 1.2rem;
+	background:#FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.products_title a{
+	flex: 1;
+	font: 0.453333rem/1.12rem "微软雅黑";
+	color: #FFFFFF;
+    text-align: center;
+	background: #1E8A10;
+}
+
+.products_details{
+	margin-top: 0.08rem;
+	height: 7.466666rem;
+	background: #FFFFFF;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	
+}
+.products_details a{
+	height: 3.733333rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 33.33%;	
+}
+.products_details  a img{
+	width: 2rem;
+	height: 2rem;
+}
+.products_details a p{
+	font: 0.32rem/0.64rem "微软雅黑";
+	color: #000000;
+}
+.products_details a span{
+	color: #1E8A10;
+	font-size: 0.266666rem;
+}
+
+.public_footer_content a:first-child i{
+	color: #1E8A10;
+}
+.public_footer_content a:first-child span{
+	color: #1E8A10;
+}

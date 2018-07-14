@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>商品详情</title>
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/swiper-4.3.3.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="css/goodsDetails.css"/>
+</head>
+<body>
+	<div class="public_content">
+		<header class="public_header">
+			<div class="public_header_content">
+				<div class="top_btn">
+					<a href="goodsCategory.html"><i class="iconfont icon-xiazai6"></i></a>
+					<a href="shopCart.html"><i class="iconfont icon-weibiao45124"></i></a>
+				</div>	
+				<a href="#">商品详情</a>
+
+				
+			</div>
+		</header>
+		<div class="swiper-container">
+			  <div class="swiper-wrapper">
+			    <div class="swiper-slide slide1"></div>
+			    <div class="swiper-slide slide2"></div>
+			    <div class="swiper-slide slide3"></div>
+			  </div>
+			   <div class="swiper-pagination"></div>
+		</div>
+		<section class="info">
+			<div class="datails_content">
+				<p>快点下单啊/快点下单啊/快点下单啊/快点下单啊/快点下单啊/快点下单啊/快点下单啊/快点下单啊</p>
+				<div class="price">
+					<span>￥28.5元</span>
+					<span>销量：580件</span>
+				</div>
+				<div>市场价：<del>￥32.5</del></div>
+				<div>
+				<span>购买数量：</span>		
+					<div class="datails_num">	
+						<input type="button" name="subtract" value="-">
+						<input type="number" value="1"/>
+						<input type="button" name="add" value="+" >
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		<section class="comment">
+			<div class="comment_title">用户评论</div>
+			<div class="comment_content">
+				<div class="user_comment">
+					<img src="img/detail6.jpg" alt="" />
+					<div>
+						<div class="user_comment_top">
+							<span>用户昵称：哈哈哈哈</span>
+							<p>评论时间：<time datetime="2018-06-14" pubdate="">2018-06-14</time></p>
+							
+						</div>
+						<p class="user_content">很好！很实惠！</p>
+					</div>
+				</div>
+				
+				<p class="comment_reply">
+					平台回复：亲，您好！很感谢您的评价，我们会继续努力的。敬请期待！
+				</p>
+				
+				<p class="comment_more">
+					追评：一起努力
+				</p>
+				
+			</div>
+			<div class="comment_content">
+				<div class="user_comment">
+					<img src="img/detail4.jpg" alt="" />
+					<div>
+						<div class="user_comment_top">
+							<span>匿名评论</span>
+							<p>评论时间：<time datetime="2018-06-14" pubdate="">2018-06-14</time></p>
+							
+						</div>
+						<p class="user_content">很好！很实惠！</p>
+					</div>
+				</div>
+				
+				<p class="comment_reply">
+					平台回复：亲，您好！很感谢您的评价，我们会继续努力的。敬请期待！
+				</p>
+				
+				<p class="comment_more">
+					追评：一起努力
+				</p>
+				
+			</div>
+		</section>
+		
+		
+		
+		<footer class="public_footer">
+			<div class="public_footer_content">
+				<a href="store.html">
+					<i class="iconfont icon-weibiao45100847"></i>
+					<span>首页</span>
+				</a>
+				<a href="myFavorite.html">
+					<i class="iconfont icon-shoucang"></i>
+					<span>收藏</span>
+				</a>
+				<a href="#" class="add_cart">
+					<span>加入购物车</span>
+				</a>
+				<a href="#" class="account">
+					<span>去结算</span>
+				</a>
+			</div>
+		</footer>
+	</div>
+</body>
+<script src="js/FontSize.js"></script>
+<script src="js/iconfont.js"></script>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/swiper-4.3.3.min.js"></script>
+<script src="js/datails_num.js"></script>
+<script>
+	
+	var mySwiper = new Swiper('.swiper-container', {
+	  autoplay:true,//等同于以下设置
+	  /*autoplay: {
+	    delay: 3000,
+	    stopOnLastSlide: false,
+	    disableOnInteraction: true,
+	    },*/
+	     loop : true,
+	     pagination: {
+		     el: '.swiper-pagination',
+		    clickable :true,
+		  },
+		
+
+	});
+	mySwiper.el.onmouseover = function(){
+ 		 mySwiper.autoplay.stop();
+	}
+</script>
+</html>

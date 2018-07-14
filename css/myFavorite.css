@@ -1,0 +1,85 @@
+.favorite_result {
+	width: 100%;
+	height: 2.72rem;
+	border-bottom:0.026666rem solid #f4f4f4;
+}
+.favorite_result .result_content {
+	width: 100%;
+	height: 2.72rem;
+	background: #FFFFFF;
+	padding:0.186666rem 0.186666rem 0.266666rem 0.186666rem;
+	box-sizing: border-box;
+	
+}
+.result_list{
+	display: flex;
+	justify-content: space-between;
+	
+}
+.result_list img{
+	width: 2.986666rem;
+	height:2.266666rem;
+	margin-right: 0.373333rem;
+}
+.list_content{
+	display: flex;
+	
+
+}
+.list_content .title{
+		font: 0.4rem/0.666666rem "微软雅黑";
+}
+.list_content .info{
+	font: 0.32rem/0.64rem "微软雅黑";
+}
+.list_content>div{
+	    display: flex;
+   		 flex-direction: column;
+   		 justify-content: space-between;
+}
+.datails_num {
+	width: 2.266666rem;
+	height: 0.533333rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #dfdfdf;
+}
+.datails_num input{
+	width: 0.933333rem;
+	height: 100%;
+	border: none;
+	background: #FFFFFF;
+	text-align: center;
+}
+.datails_num input[name="subtract"]{
+	border-right:1px solid #dfdfdf; 
+	
+}
+.datails_num input[name="add"]{
+	border-left:1px solid #dfdfdf; 
+	
+}
+
+.result_last {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.result_last .price{
+	font: 0.4rem/0.666666rem "微软雅黑";
+	color: #1E8A10;
+	
+	
+}
+.result_last i{
+	width: 0.693333rem;
+	height: 0.693333rem;
+	background: #1E8A10;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: flex-end;
+	
+}

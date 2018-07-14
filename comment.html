@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>发表评价</title>
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/comment.css"/>
+</head>
+<body>
+	<div class="public_content2" id="login">
+		<header class="public_header">
+			<div class="public_header_content">
+				<a href="myOrder4.html"><i class="iconfont icon-xiazai6"></i></a>
+				<a href="#">发表评价</a>
+			</div>
+		</header>
+		<section class="comment">
+			<div class="comment_content">
+					<div class="comment_details">
+						<img src="img/detail5.jpg" alt="" />
+						<textarea name="" rows="" cols="" placeholder="亲，给个评价吧！"></textarea>
+					</div>
+					<div class="comment_score">
+						<p class="comment_score_title">综合评分</p>
+						<div id="starRating">
+							<span>商品评价:</span>
+						    <p class="photo">
+						        <span><i class="high"></i><i class="nohigh"></i></span>
+						        <span><i class="high"></i><i class="nohigh"></i></span>
+						        <span><i class="high"></i><i class="nohigh"></i></span>
+						        <span><i class="high"></i><i class="nohigh"></i></span>
+						        <span><i class="high"></i><i class="nohigh"></i></span>
+						    </p>
+						    <p></p>
+						    <span>物流评价:</span>
+						    <p class="photo">
+						        <span><i class="high"></i><i class="nohigh"></i></span>
+						        <span><i class="high"></i><i class="nohigh"></i></span>
+						        <span><i class="high"></i><i class="nohigh"></i></span>
+						        <span><i class="high"></i><i class="nohigh"></i></span>
+						        <span><i class="high"></i><i class="nohigh"></i></span>
+						    </p>
+						    
+						    <div class="bottoms">
+       						<a class="blueBtn sureStar">确认</a>
+   						 </div>
+						</div>				
+						
+						
+						
+						
+					</div>
+					
+			</div>
+		</section>
+		
+		
+	</div>
+</body>
+<script src="js/FontSize.js"></script>
+<script src="js/iconfont.js"></script>
+<script src="js/jquery-3.3.1.js"></script>
+<script>
+	 $(function () {
+        //评分
+        var starRating = 0;
+        $('.photo span').on('mouseenter',function () {
+            var index = $(this).index()+1;
+            $(this).prevAll().find('.high').css('z-index',1)
+            $(this).find('.high').css('z-index',1)
+            $(this).nextAll().find('.high').css('z-index',0)
+            $('.starNum').html((index*2).toFixed(1)+'分')
+        })
+        $('.photo').on('mouseleave',function () {
+            $(this).find('.high').css('z-index',0)
+            var count = starRating / 2
+            if(count == 5) {
+                $('.photo span').find('.high').css('z-index',1);
+            } else {
+                $('.photo span').eq(count).prevAll().find('.high').css('z-index',1);
+            }
+            $('.starNum').html(starRating.toFixed(1)+'分')
+        })
+        $('.photo span').on('click',function () {
+            var index = $(this).index()+1;
+            $(this).prevAll().find('.high').css('z-index',1)
+            $(this).find('.high').css('z-index',1)
+            starRating = index*2;
+            $('.starNum').html(starRating.toFixed(1)+'分');
+//          alert('评分：'+(starRating.toFixed(1)+'分'))
+        })
+        //取消评分
+        $('.cancleStar').on('click',function () {
+            starRating = 0;
+            $('.photo span').find('.high').css('z-index',0);
+            $('.starNum').html(starRating.toFixed(1)+'分');
+        })
+        //确定评分
+        $('.sureStar').on('click',function () {
+            if(starRating===0) {
+                alert('最低一颗星！');
+            } else {
+//             alert('评分：'+(starRating.toFixed(1)+'分'))
+            }
+        })
+    })
+</script>
+</html>

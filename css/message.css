@@ -1,0 +1,45 @@
+.message{
+	width: 100%;
+}
+.message_content{
+	width: 100%;
+	
+}
+.message_list{
+	width:100% ;
+	height: 1.493333rem;
+	background: #FFFFFF;
+	border-bottom: 0.053333rem solid #E2E2E2;
+	padding: 0.186666rem 0.266666rem;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.message_list i{
+	width:1.066666rem;
+	height: 1.066666rem;
+	background: #1E8A10;
+	color: #FFFFFF;
+	font-size: 0.666666rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0.2rem;
+}
+.message_list div{
+	margin-left: 0.133333rem;
+	display: flex;
+	flex-direction: column;
+}
+.message_list div span{
+	font-size:0.373333rem ;
+}
+.message_list div p {
+	font-size: 0.32rem;
+}
+.message_list .data{
+	font-size: 0.266666rem;
+	color: #E2E2E2;
+	align-self: flex-start;
+}

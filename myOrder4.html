@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>我的订单</title>
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/myOrder.css"/>
+	<style>
+			.prompt_content {
+				padding: 0 0.373333rem;
+				box-sizing: border-box;
+			}
+			.prompt_content p{
+				text-indent:2em;
+				font: 0.32rem/0.56rem "微软雅黑";
+			}
+			.public_tab_content li:nth-of-type(4) a{
+				border-bottom: 0.053333rem solid #1E8A10;
+				color: #1E8A10;
+			}
+	</style>
+</head>
+<body>
+	<div class="public_content2" id="login">
+		<header class="public_header">
+			<div class="public_header_content">
+				<a href="personalcenter.html"><i class="iconfont icon-xiazai6"></i></a>
+				<a href="#">我的订单</a>
+			</div>
+		</header>
+		<section class="public_tab">
+			<div class="public_tab_content">
+				<ul>
+					<li><a href="myOrder.html">代付款</a></li>
+					<li><a href="myOrder2.html">代配送</a></li>
+					<li><a href="myOrder3.html">配送中</a></li>
+					<li><a href="#">已送达</a></li>
+				</ul>
+			</div>
+		</section>
+		<section class="prompt">
+			<div class="prompt_content">
+				<p>注:只有待配送和已送达之后才可提交退换货/退款申请，并且需后台审核通过才可完成申请，退还的金额返还至个人账户余额。</p>
+			</div>
+		</section>
+		<section class="orderNumber">
+			<div class="orderNumber_content">
+				<div class="orderNumber_title">
+					<p>订单编号:<span>123456</span></p>
+					<a href=""><i class="iconfont icon-next"></i></a>
+				</div>
+				<div class="orderNumber_info">
+					<div class="info-content">
+						<div class="info_top">
+							<img src="img/detail6.jpg" alt="" />
+							<div class="top_info">
+								<p>香喷喷热乎乎的大烧饼香喷喷热乎乎的大烧饼</p>
+								<p class="top_info_time">送达时间:<span>18:30</span></p>
+							</div>
+							<div class="info_number">
+								<span class="info_price">￥167.0元</span>
+								<span>x1</span>
+							</div>
+						</div>
+						<div class="info_btn">
+							<button>售后退货</button>
+							<button onclick="window.location.href='comment.html'">评价订单</button>
+							
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</section>
+		<section class="orderNumber">
+			<div class="orderNumber_content">
+				<div class="orderNumber_title">
+					<p>订单编号:<span>123456</span></p>
+					<a href=""><i class="iconfont icon-next"></i></a>
+				</div>
+				<div class="orderNumber_info">
+					<div class="info-content">
+						<div class="info_top">
+							<img src="img/detail6.jpg" alt="" />
+							<div class="top_info">
+								<p>香喷喷热乎乎的大烧饼香喷喷热乎乎的大烧饼</p>
+							</div>
+							<div class="info_number">
+								<span class="info_price">￥167.0元</span>
+								<span>x1</span>
+							</div>
+						</div>
+					
+						
+					</div>
+					<div class="info-content">
+						<div class="info_top">
+							<img src="img/detail6.jpg" alt="" />
+							<div class="top_info">
+								<p>香喷喷热乎乎的大烧饼香喷喷热乎乎的大烧饼</p>
+								<p class="top_info_time">送达时间:<span>18:30</span></p>
+							</div>
+							<div class="info_number">
+								<span class="info_price">￥167.0元</span>
+								<span>x1</span>
+							</div>
+						</div>
+					<div class="info_btn">
+							<button>售后退货</button>
+							<button>已评价</button>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+		</section>
+		
+		
+		<section class="public_dialog" >
+			<div class="public_dialog_content">
+				<div class="order_dialog">
+					<div class="reason">
+						<span>原因:</span>
+						<textarea name="" rows="" cols=""></textarea>
+					</div>
+					<div class="require">
+						<span>要求:</span>
+						<ul>
+							<li><input type="radio" name="require" id="" /><span>仅退款</span></li>
+							<li><input type="radio" name="require" id="" /><span>换货</span></li>
+							<li><input type="radio" name="require" id="" /><span>退款/换货</span></li>
+						</ul>
+					</div>
+					<div class="dialog_btn">
+						<button>确定</button>
+						<button class="cancel">取消</button>
+					</div>
+					
+					
+				</div>
+			</div>
+		</section>
+	</div>
+	
+</body>
+<script src="js/FontSize.js"></script>
+<script src="js/iconfont.js"></script>
+<script src="js/jquery-3.3.1.js"></script>
+<script>
+	$(function(){
+		$(".info_btn button").eq(0).on("click",function(){
+			
+			$(".public_dialog").css("display","block")
+			
+		})
+		$(".cancel").on("click",function(){
+			
+			$(".public_dialog").css("display","none")
+			
+			
+			
+		})
+		
+		
+		
+		
+		
+	})
+	
+	
+</script>
+</html>

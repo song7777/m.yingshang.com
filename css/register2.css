@@ -1,0 +1,31 @@
+.public_input{
+	padding: 0.933333rem 1.92rem 0;
+}
+.select_area,.address{
+	font-size: 0.266666rem;
+	display: block;
+	border-bottom: 0.266666rem solid #CCCCCC;
+	line-height: 0.533333rem;
+}
+.public_input div{
+	height: 0.8rem;
+}
+.public_input div input{
+	padding-right: 0.133333rem;
+	text-align: center;
+	margin-left: 1.733333rem;
+}
+.address{
+	margin-top: 1.6rem;
+	margin-bottom: 0.266666rem;
+}
+textarea{
+	width: 6.133333rem;
+	height: 2.266666rem;
+	box-sizing: border-box;
+	border: 1px solid #CCCCCC;
+	
+}
+.btn_register{
+	margin-top: 3.333333rem;
+}

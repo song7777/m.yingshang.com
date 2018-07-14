@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>修改资料</title>
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/modifiedData.css"/>
+</head>
+<body>
+	<div class="public_content2">
+		<header class="public_header">
+			<div class="public_header_content">
+				<a href="personalcenter.html"><i class="iconfont icon-xiazai6"></i></a>
+				<a href="#">修改资料</a>
+			</div>
+		</header>
+		<section class="personal"> 
+			<div class="personal_content">
+				<div class="personal_picture">
+					<img src="img/detail2.jpg"/>
+				</div>
+				<div class="file">
+					<label for="file">更换头像</label>
+					<input type="file" id="file" style="display: none;"/> 
+				</div>
+				
+			</div>
+			
+		</section>
+		<section class="personal_name">
+			<div class="name_content">
+				<p>输入昵称</p>
+				<input type="text" placeholder="点击输入昵称" />
+			</div>
+		</section>
+		<div class="sure">
+			<button class="sure_btn">确定</button>
+		</div>
+		
+	</div>
+</body>
+<script src="js/FontSize.js"></script>
+<script src="js/iconfont.js"></script>
+<script src="js/jquery-3.3.1.js"></script>
+<script>
+	$(function(){
+		
+		$("#file").change(function(){
+			var objUrl = getObjectURL(this.files[0]);
+			if(objUrl){
+				$(".personal_content div img").attr("src",objUrl)
+			}
+	
+		})
+		function getObjectURL(file){
+			var url = null;
+			if(window.createObjectURL != undefined){
+				url=window.createObjectURL(file);
+			}else if(window.URL != undefined){
+				url=window.URL.createObjectURL(file);
+			}else if(window.webkitURL != undefined){
+				url=window.webkitURL.createObjectURL(file);
+				
+			}
+			return url;
+		}
+		
+		
+		
+		
+	})
+	
+</script>
+</html>

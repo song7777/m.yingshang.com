@@ -1,0 +1,225 @@
+.public_content a,span,i{
+	display: inline-block;
+}
+/*header*/
+.header{
+	width: 100%;
+}
+.header_content{
+	width: 100%;
+	height: 6rem;
+	background: -webkit-gradient(linear,left top,right bottom,from(#1dd213),to(#20741c));
+	display: flex;
+	flex-direction: column;
+
+
+}
+.personal{
+	width: 100%;
+	height: 4.933333rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.personal a,p{
+		color: #FFFFFF;
+	font: 0.346666rem/0.693333rem "微软雅黑";
+}
+.personal_left{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 0.72rem;
+}
+.personal_picture{
+	width: 1.653333rem;
+	height: 1.653333rem;
+	border: 1px solid #feff83;
+	 border-radius:50%; 
+	 overflow:hidden
+}
+.personal_picture img{
+	width: 100%;
+	height: 100%;
+}
+.personal_name{
+	margin-left: 0.4rem;
+	display: flex;
+	flex-direction: column;
+	align-items:stretch ;
+
+}
+
+.personal_name a{
+	text-align: center;
+	width: 1.813333rem;
+	border: 1px solid #FFFFFF;
+	border-radius: 0.533333rem;
+}
+
+.personal_right{
+	margin-right: 0.266666rem;
+	margin-bottom: 0.666666rem;
+}
+.info{
+	width: 100%;
+	height: 1.066666rem;
+	background: rgba(0,0,0,.2);
+	display: flex;
+	justify-content: space-around;
+}
+.info a{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 25%;
+	border-right: 1px solid #FFFFFF;
+	color: #FFFFFF;
+	margin: 0.133333rem 0;
+	box-sizing: border-box;
+}
+.info a:last-child{
+	border-right: none;
+}
+.info a span:nth-child(1) {
+	font-size: 0.24rem;
+}
+.info a span:nth-child(2){
+	font-size: 0.32rem;
+}
+/*end header*/
+.clear{
+	margin: 0.026666rem 0 0.08rem;
+	height: 0.026666rem;
+	background: #FFFFFF;
+	clear: both;
+}
+
+/*myorder*/
+.myorder{
+	width: 100%;
+	height: 2.373333rem;
+	margin-bottom: 0.106666rem;
+}
+.myorder_top{
+	height: 0.773333rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0.133333rem;
+	box-sizing: border-box;
+	font-size: 0.293333rem;
+	background: #FFFFFF;
+	
+}
+.myorder_top>span{
+	color: #5f5f5f;
+}
+.myorder_top a{
+	color: #6ea63b;
+	display: flex;
+	align-items: center;
+
+}
+.myorder_btm{
+	height: 1.546666rem;
+	background: #FFFFFF;
+	margin-top: 0.053333rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.myorder_btm a{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	color: #5f5f5f;
+}
+.myorder_btm a i{
+	font-size: 0.453333rem ;
+}
+.myorder_btm a span{
+	font: 0.32rem/0.533333rem "微软雅黑";
+}	
+	
+/*end myorder*/
+/*option*/
+	.option{
+		width: 100%;
+
+	}
+	.option_content{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.option_content a{
+		width: 100%;
+		height: 1.28rem;
+		background: #FFFFFF;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 0.506666rem 0 0.426666rem;
+		box-sizing: border-box;
+		margin-bottom: 0.026666rem;
+	}
+	.option_content a span {
+		color: #6a6a6a;
+		margin-left: 0.24rem;
+	}
+	.option_content  a div {
+		display: flex;
+		align-items: center;
+		
+	}
+	.option_content a div i{
+		width:0.746666rem;
+		height: 0.746666rem;
+		color: #FFFFFF;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	.option_content a>i{
+		color: #6a6a6a;
+	}
+	.option_content a:nth-child(1) div i{
+		background: #ec0054;
+	}
+	.option_content a:nth-child(2) div i{
+		background: #75c8fe;
+	}
+	.option_content a:nth-child(3) div i{
+		background: #ffb400;
+	}
+	.option_content a:nth-child(4) div i{
+		background: #14b5b0;
+	}
+	.option_content a:nth-child(5) div i{
+		background: #ffaa4f;
+	}
+	.option_content a:nth-child(6) div i{
+		background: #f3f605;
+	}
+	.option_content a:nth-child(7) div i{
+		background: #f4f706;
+	}
+	.option_content a:nth-child(8) div i{
+		background: #16c637;
+	}
+	.option_content a:nth-child(9) div i{
+		background: #fabe2a;
+	}
+/*end option*/
+
+
+.public_footer_content a:last-child i{
+	color: #1E8A10;
+}
+.public_footer_content a:last-child span{
+	color: #1E8A10;
+}

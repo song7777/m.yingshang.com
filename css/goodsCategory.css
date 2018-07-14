@@ -1,0 +1,98 @@
+.category{
+	width: 100%;
+	
+}
+.category_content{
+	width: 100%;
+}
+.category_listbox{
+    position: fixed;
+	height: 100vh;
+	background: #f4f4f4;
+    width: 2.4rem;
+	
+}
+.category_listbox dl{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+}
+.category_listbox dt,dd{
+	border-bottom:1px solid #FFFFFF ;
+	width: 100%;
+	height: 0.986666rem;
+	background: #f4f4f4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.346666rem;
+
+}
+.category_listbox dt:hover{
+	background: #FFFFFF;
+	border-bottom:1px solid #629e2c ;
+}
+.category_listbox dd:hover{
+	background: #FFFFFF;
+	border-bottom:1px solid #629e2c ;
+}
+
+.category_details{
+	background: #f4f4f4;
+	margin-left: 2.4rem;
+	height: 100%;
+}
+.datails_content{
+	height: 2.88rem;
+	background: #FFFFFF;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;	
+	padding: 0 0.533333rem 0 0.266666rem;
+	box-sizing: border-box;
+	margin-bottom: 0.026666rem;
+}
+.datails_content img{
+	
+	width: 2.4rem;
+	height: 2.4rem;
+}
+.datails_num {
+	width: 2.266666rem;
+	height: 0.533333rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #dfdfdf;;
+}
+.datails_num input{
+	width: 0.933333rem;
+	height: 100%;
+	border: none;
+	background: #FFFFFF;
+	text-align: center;
+}
+.datails_num input[name="subtract"]{
+	border-right:1px solid #dfdfdf; 
+	
+}
+.datails_num input[name="add"]{
+	border-left:1px solid #dfdfdf; 
+	
+}
+
+
+.datails_content i{
+	width: 0.693333rem;
+	height: 0.693333rem;
+	background: #1E8A10;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self:flex-end;
+	margin-bottom: 0.266666rem;
+
+}
